@@ -14,13 +14,13 @@
   <meta property="og:image" content="" />
   <meta property="og:description" content="" />
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link href="./assets/styles/style.css" type="text/css" rel="stylesheet" />
-  <!-- 기존 스크립트들 -->
-  <script src="./assets/scripts/common.ui.plugin.js" data-init></script>
-  <script src="./assets/scripts/common.ui.js" data-init></script>
-  <script src="./assets/scripts/common.js"></script>
+  <link href="../../assets/styles/style.css" type="text/css" rel="stylesheet" />
+  <script src="../../assets/scripts/common.ui.plugin.js" data-init></script>
+  <script src="../../assets/scripts/common.ui.js" data-init></script>
   <!-- <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=937a6e2254897fcfacb4449b6fbe0fc1&libraries=services"></script> -->
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=937a6e2254897fcfacb4449b6fbe0fc1&libraries=services,clusterer,drawing"></script>
   <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=937a6e2254897fcfacb4449b6fbe0fc1&libraries=services"></script> -->
+  <script src="../../assets/scripts/common.js"></script>
   <script type="text/javascript">
     ! function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -48,13 +48,13 @@
         <div class="main-wrap">
           <div class="top-img-wrap">
             <div class="badge">
-              <img src="./assets/images/first-birthday.webp" alt="" />
+              <img src="../../assets/images/first-birthday.webp" alt="" />
             </div>
             <div class="photo">
-              <img src="./assets/images/img-main-top.png" alt="" />
+              <img src="../../assets/images/img-main-top.png" alt="" />
             </div>
             <div class="point">
-              <img src="./assets/images/img-ribbon.png" alt="" />
+              <img src="../../assets/images/img-ribbon.png" alt="" />
             </div>
           </div>
           <div class="info-wrap">
@@ -68,10 +68,10 @@
           </div>
           <div class="bg-area">
             <div class="bg-item01">
-              <img src="./assets/images/img-animal01.webp" alt="" />
+              <img src="../../assets/images/img-animal01.webp" alt="" />
             </div>
             <div class="bg-item02">
-              <img src="./assets/images/img-animal02.webp" alt="" />
+              <img src="../../assets/images/img-animal02.webp" alt="" />
             </div>
           </div>
         </div>
@@ -84,20 +84,17 @@
         </div>
         <div class="contents-layer-wrap">
           <div class="parent-wrap">
-            <div class="img">
-              <img src="./assets/images/parent-01.jpeg" alt="" />
-            </div>
             <div class="dad-box">
-              <!-- <div class="img">
-                </div> -->
+              <div class="img">
+              </div>
               <div class="txt">
                 <span>아빠</span> 정인호
               </div>
               <div class="txt"> 석현이가 씩씩하고 <br> 현명한 아이가 되도록 <br> 항상 옆에서 응원하는 <br> 아빠가 되겠습니다. </div>
             </div>
             <div class="mom-box">
-              <!-- <div class="img">
-                </div> -->
+              <div class="img">
+              </div>
               <div class="txt">
                 <span>엄마</span> 박선미
               </div>
@@ -109,7 +106,7 @@
           <div class="calendar-wrap">
             <div class="tit">행사일</div>
             <div class="calendar-img">
-              <img src="./assets/images/img-main-top.png" alt="" />
+              <img src="../../assets/images/img-main-top.png" alt="" />
             </div>
             <div class="txt">2025년 3월 16일 일요일 오후 3시 </div>
             <div class="calendar">
@@ -193,22 +190,6 @@
           </div>
           <div class="map-wrap">
             <div class="map">
-              <!-- * 카카오맵 - 지도퍼가기 -->
-              <!-- 1. 지도 노드 -->
-              <div id="daumRoughmapContainer1739119826020" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-              <!--
-                  2. 설치 스크립트
-                  * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                -->
-              <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-              <!-- 3. 실행 스크립트 -->
-              <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                  "timestamp": "1739119826020",
-                  "key": "2myu3"
-                }).render();
-
-              </script>
             </div>
             <div class="btn-box">
               <button class="btn btn-naver">
@@ -229,25 +210,22 @@
         <div class="contents-layer-wrap">
           <div class="tit">갤러리</div>
           <div class="gallery-wrap ">
-            <div class="component-swiper" data-component="swiper" data-props-initial-slide="1" data-props-slides-per-group="3" data-props-navigation="false" data-props-pagination="true" data-props-autoplay="false" data-props-slides-per-view="3" data-props-speed="700" data-props-space-between="8">
+            <div class="component-swiper" data-component="swiper" data-props-initial-slide="1" data-props-navigation="false" data-props-pagination="true" data-props-autoplay="false" data-props-slides-per-view="3" data-props-speed="700" data-props-space-between="8">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <button type="button"><img src="./assets/images/gallery-01-01.jpeg" alt="" /></button>
+                  <button><img src="../../assets/images/img-main-top.png" alt="" /></button>
                 </div>
                 <div class="swiper-slide">
-                  <button type="button"><img src="./assets/images/gallery-01-02.jpeg" alt="" /></button>
+                  <button><img src="../../assets/images/img-main-top.png" alt="" /></button>
                 </div>
                 <div class="swiper-slide">
-                  <button type="button"><img src="./assets/images/gallery-01-03.jpeg" alt="" /></button>
+                  <button><img src="../../assets/images/img-main-top.png" alt="" /></button>
                 </div>
                 <div class="swiper-slide">
-                  <button type="button"><img src="./assets/images/gallery-01-04.jpeg" alt="" /></button>
+                  <button><img src="../../assets/images/img-main-top.png" alt="" /></button>
                 </div>
                 <div class="swiper-slide">
-                  <button type="button"><img src="./assets/images/gallery-01-05.jpeg" alt="" /></button>
-                </div>
-                <div class="swiper-slide">
-                  <button type="button"><img src="./assets/images/gallery-01-06.jpeg" alt="" /></button>
+                  <button><img src="../../assets/images/img-main-top.png" alt="" /></button>
                 </div>
               </div>
             </div>
@@ -261,7 +239,7 @@
                 <div class="swiper-slide">
                   <div class="img-box">
                     <div class="img">
-                      <img src="./assets/images/img-main-top.png" alt="" />
+                      <img src="../../assets/images/img-main-top.png" alt="" />
                     </div>
                     <div class="txt-box">
                       <div class="date">2024.03.19</div>
@@ -272,7 +250,7 @@
                 <div class="swiper-slide">
                   <div class="img-box">
                     <div class="img">
-                      <img src="./assets/images/img-main-top.png" alt="" />
+                      <img src="../../assets/images/img-main-top.png" alt="" />
                     </div>
                     <div class="txt-box">
                       <div class="date">2024.03.19</div>
@@ -283,7 +261,7 @@
                 <div class="swiper-slide">
                   <div class="img-box">
                     <div class="img">
-                      <img src="./assets/images/img-main-top.png" alt="" />
+                      <img src="../../assets/images/img-main-top.png" alt="" />
                     </div>
                     <div class="txt-box">
                       <div class="date">2024.03.19</div>
@@ -303,18 +281,18 @@
               <div class="accordion-content">
                 <div class="bank-account-wrap">
                   <div class="flex-box">
-                    <div class="txt">주인공</div>
-                    <div class="txt">정석현</div>
+                    <div class="txt">엄마</div>
+                    <div class="txt">박선미</div>
                     <button type="button" class="btn btn-kakaopay">
                       <span>송금하기</span>
                       <i class="ico ico-kakaopay"></i>
                     </button>
                   </div>
                   <div class="flex-box">
-                    <div class="txt">MG새마을금고</div>
-                    <div class="txt account-num">9003-2929-3475-7</div>
+                    <div class="txt">신한은행</div>
+                    <div class="txt account-num">000-0000-000-0000</div>
                     <button type="button" class="btn btn-copy">
-                      <span>복사</span>
+                      <span>계좌번호 복사</span>
                       <i class="ico ico-copy"></i>
                     </button>
                   </div>
@@ -396,18 +374,18 @@
               <a href="tel: 01076684200" class="btn-tel">
                 <i class="ico ico-tel"></i>
               </a>
-              <!-- <button type="button" class="btn-message">
-                  <i class="ico ico-message"></i>
-                </button> -->
+              <button type="button" class="btn-message">
+                <i class="ico ico-message"></i>
+              </button>
             </div>
             <div class="phone-box">
               <span class="phone-tit">엄마 박선미</span>
               <a href="tel: 01057301066" class="btn-tel">
                 <i class="ico ico-tel"></i>
               </a>
-              <!-- <button type="button" class="btn-message">
-                  <i class="ico ico-message"></i>
-                </button> -->
+              <button type="button" class="btn-message">
+                <i class="ico ico-message"></i>
+              </button>
             </div>
           </div>
           <button class="modal-close btn"></button>
@@ -465,54 +443,30 @@
   <div class="dimm"></div>
   <script>
     window.onload = function() {
+      // Kakao SDK 초기화 전에 로드 확인
+      Kakao.init('937a6e2254897fcfacb4449b6fbe0fc1'); // 'YOUR_APP_KEY'를 실제 앱 키로 교체하세요.
       // // 진입 이벤트
-      const loadingWrap = document.querySelector('.loading-wrap');
-      const pageClassMain = document.querySelector('.pageClassMain');
-      // Show loading screen
-      loadingWrap.style.display = 'block';
-      loadingWrap.style.opacity = '1';
-      pageClassMain.style.display = 'none';
-      // Initialize loading sequence
-      const LOADING_DURATION = 2500;
-      const FADE_DURATION = 1000;
-      setTimeout(() => {
-        loadingWrap.style.opacity = '0';
-        loadingWrap.style.transition = `opacity ${FADE_DURATION}ms ease-out`;
-        setTimeout(() => {
-          loadingWrap.style.display = 'none';
-          pageClassMain.style.display = 'block';
-          requestAnimationFrame(() => {
-            pageClassMain.classList.add('show');
-          });
-        }, FADE_DURATION);
-      }, LOADING_DURATION);
-      // 디데이 카운트
-      var countDownDate = new Date("Mar 16, 2025 15:00:00").getTime();
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-        // Get today's date and time
-        var now = new Date().getTime();
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.querySelector('.days .num').innerHTML = days;
-        document.querySelector('.hours .num').innerHTML = hours;
-        document.querySelector('.minutes .num').innerHTML = minutes;
-        document.querySelector('.seconds .num').innerHTML = seconds;
-        document.querySelector('.dday-desc .count').innerHTML = days + "일";
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
+      // const loadingWrap = document.querySelector('.loading-wrap');
+      // const pageClassMain = document.querySelector('.pageClassMain');
+      // // Show loading screen
+      // loadingWrap.style.display = 'block';
+      // loadingWrap.style.opacity = '1';
+      // pageClassMain.style.display = 'none';
+      // // Initialize loading sequence
+      // const LOADING_DURATION = 2500;
+      // const FADE_DURATION = 1000;
+      // setTimeout(() => {
+      //   loadingWrap.style.opacity = '0';
+      //   loadingWrap.style.transition = `opacity ${FADE_DURATION}ms ease-out`;
+      //   setTimeout(() => {
+      //     loadingWrap.style.display = 'none';
+      //     pageClassMain.style.display = 'block';
+      //     requestAnimationFrame(() => {
+      //       pageClassMain.classList.add('show');
+      //     });
+      //   }, FADE_DURATION);
+      // }, LOADING_DURATION);
     };
-
-  </script>
-  <script>
     document.addEventListener('DOMContentLoaded', function() {
       // 연락하기 모달
       const $btnModal01 = document.querySelector('.btn-modal01');
@@ -613,73 +567,25 @@
       }, 1000);
       // 네이버 지도 연결
       document.querySelector(".btn-naver").addEventListener("click", function() {
+        // 네이버 지도 URL 생성 (좌표, 장소 이름 지정 가능)
+        const latitude = 37.5665; // 위도 (예: 서울)
+        const longitude = 126.9780; // 경도
         const placeName = "플로렌스 보라매점";
-        const placeX = "14129145.4174025"; // 네이버 지도 X좌표
-        const placeY = "4507911.5556359"; // 네이버 지도 Y좌표
-        const placeId = "34882590"; // 장소 ID
-        // 현재 위치 가져오기
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            // 위경도를 네이버 지도 좌표로 변환
-            const currentX = position.coords.longitude * 111319.49079327357;
-            const currentY = Math.log(Math.tan((90 + position.coords.latitude) * Math.PI / 360)) / (Math.PI / 180) * 111319.49079327357;
-            // 네이버 지도 URL 생성 (새로운 형식)
-            const naverMapUrl = `https://map.naver.com/p/directions/` + `${currentX},${currentY},현재위치,,ADDRESS_POI/` + `${placeX},${placeY},${encodeURIComponent(placeName)},${placeId},PLACE_POI/-/walk?c=14.00,0,0,0,dh`;
-            // 새 창에서 네이버 지도 열기
-            window.open(naverMapUrl, "_blank");
-          }, function(error) {
-            // 위치 정보를 가져올 수 없는 경우
-            console.error("위치 정보를 가져올 수 없습니다:", error);
-            const searchUrl = `https://map.naver.com/p/search/${encodeURIComponent(placeName)}`;
-            window.open(searchUrl, "_blank");
-          });
-        } else {
-          // 지오로케이션을 지원하지 않는 브라우저의 경우
-          console.log("이 브라우저에서는 위치 정보를 지원하지 않습니다.");
-          const searchUrl = `https://map.naver.com/p/search/${encodeURIComponent(placeName)}`;
-          window.open(searchUrl, "_blank");
-        }
+        // 네이버 지도 URL
+        const naverMapUrl = `https://map.naver.com/v5/?c=${longitude},${latitude},15,0,0&searchCoord=${longitude},${latitude}&place=${encodeURIComponent(placeName)}`;
+        // 새 탭으로 열기
+        window.open(naverMapUrl, "_blank");
       });
       // 카카오 내비 연결
       document.querySelector(".btn-kakao").addEventListener("click", function() {
-        const placeName = "플로렌스 보라매점";
-        const destinationLat = "37.4967"; // 플로렌스 보라매점 위도
-        const destinationLng = "126.9179"; // 플로렌스 보라매점 경도
-        // 현재 위치 가져오기
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            const currentLat = position.coords.latitude;
-            const currentLng = position.coords.longitude;
-            // 카카오내비 URL 스키마 생성 (현재 위치에서 목적지까지)
-            const kakaoNaviUrl = `kakaonavi://route?sp=${currentLat},${currentLng}&ep=${destinationLat},${destinationLng}` + `&by=CAR` + // 자동차 길찾기 (PUBLICTRANSIT: 대중교통, FOOT: 도보)
-              `&sname=현재위치` + `&ename=${encodeURIComponent(placeName)}`;
-            // 카카오내비 실행
-            window.location.href = kakaoNaviUrl;
-            // 카카오내비가 설치되어 있지 않은 경우를 위한 타임아웃 처리
-            setTimeout(function() {
-              // 앱스토어로 이동하는 로직
-              if (confirm('카카오내비가 설치되어 있지 않습니다. 설치하시겠습니까?')) {
-                if (navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPad') > -1) {
-                  window.location.href = 'https://itunes.apple.com/kr/app/kakaonavi/id417698849';
-                } else {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.locnall.KimGiSa';
-                }
-              }
-            }, 500);
-          }, function(error) {
-            // 위치 정보를 가져올 수 없는 경우
-            console.error("위치 정보를 가져올 수 없습니다:", error);
-            // 목적지만 입력하여 카카오내비 실행
-            const kakaoNaviUrl = `kakaonavi://route?ep=${destinationLat},${destinationLng}&ename=${encodeURIComponent(placeName)}`;
-            window.location.href = kakaoNaviUrl;
-          });
-        } else {
-          // 지오로케이션을 지원하지 않는 브라우저의 경우
-          console.log("이 브라우저에서는 위치 정보를 지원하지 않습니다.");
-          // 목적지만 입력하여 카카오내비 실행
-          const kakaoNaviUrl = `kakaonavi://route?ep=${destinationLat},${destinationLng}&ename=${encodeURIComponent(placeName)}`;
-          window.location.href = kakaoNaviUrl;
-        }
+        // 목적지 정보 설정
+        const destinationName = "플로렌스 보라매점";
+        const latitude = 37.4967; // 플로렌스 보라매점 위도
+        const longitude = 126.9179; // 플로렌스 보라매점 경도
+        // 카카오네비 URL 스키마
+        const kakaoNaviUrl = `kakaonavi://route?ep=${latitude},${longitude}&ename=${encodeURIComponent(destinationName)}`;
+        // 카카오네비 실행
+        window.location.href = kakaoNaviUrl;
       });
       //카카오뱅크 송금하기
       document.querySelector(".btn-kakaopay").addEventListener("click", function() {
@@ -755,6 +661,35 @@
             section.classList.remove('fade-in');
           }
         });
+      });
+      // 카카오맵 초기화 및 표시
+      var mapContainer = document.querySelector('.map'), // 지도를 표시할 div
+        mapOption = {
+          center: new kakao.maps.LatLng(37.4967, 126.9179), // 플로렌스 보라매점 좌표
+          level: 3 // 지도의 확대 레벨
+        };
+      // 지도 생성
+      var map = new kakao.maps.Map(mapContainer, mapOption);
+      // 주소-좌표 변환 객체 생성
+      var geocoder = new kakao.maps.services.Geocoder();
+      // 주소로 좌표를 검색
+      geocoder.addressSearch('서울 동작구 보라매로5길 15', function(result, status) {
+        // 정상적으로 검색이 완료됐으면
+        if (status === kakao.maps.services.Status.OK) {
+          var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+          // 결과값으로 받은 위치를 마커로 표시
+          var marker = new kakao.maps.Marker({
+            map: map,
+            position: coords
+          });
+          // 인포윈도우로 장소에 대한 설명을 표시
+          var infowindow = new kakao.maps.InfoWindow({
+            content: '<div style="width:150px;text-align:center;padding:6px 0;">플로렌스 보라매점</div>'
+          });
+          infowindow.open(map, marker);
+          // 지도의 중심을 결과값으로 받은 위치로 이동
+          map.setCenter(coords);
+        }
       });
     })
 
