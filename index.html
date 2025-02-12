@@ -775,18 +775,28 @@
         console.error('Kakao init error:', e);
       }
       const shareButton = document.querySelector('.btn-kakaoshare');
-      console.log('Share button found:', shareButton); // 버튼 엘리먼트 확인
-      // 카카오 공유하기 버튼 이벤트
+      console.log('Share button found:', shareButton);
       shareButton.addEventListener('click', function(e) {
-        console.log('Share button clicked'); // 클릭 이벤트 발생 확인
         e.preventDefault();
-        if (!Kakao.isInitialized()) {
-          console.error('Kakao SDK not initialized');
-          alert('카카오 SDK 초기화에 실패했습니다.');
+        console.log('Share button clicked');
+        // SDK가 로드되었는지 확인
+        if (typeof Kakao === 'undefined') {
+          console.error('Kakao SDK가 로드되지 않았습니다.');
+          alert('카카오 SDK를 불러올 수 없습니다.');
           return;
         }
+        // SDK 초기화 재시도
+        if (!Kakao.isInitialized()) {
+          try {
+            Kakao.init('937a6e2254897fcfacb4449b6fbe0fc1');
+          } catch (error) {
+            console.error('Kakao 재초기화 실패:', error);
+            alert('카카오 기능을 사용할 수 없습니다.');
+            return;
+          }
+        }
         try {
-          console.log('Attempting to share...'); // 공유 시도 확인
+          console.log('공유하기 시도...');
           Kakao.Share.sendDefault({
             objectType: 'feed',
             content: {
@@ -798,11 +808,6 @@
                 mobileWebUrl: 'https://seokhyeonparty.netlify.app'
               }
             }
-          }).then(function(response) {
-            console.log('공유 성공:', response);
-          }).catch(function(error) {
-            console.error('공유 실패:', error);
-            alert('카카오톡 공유하기에 실패했습니다.');
           });
         } catch (error) {
           console.error('카카오 공유하기 에러:', error);
