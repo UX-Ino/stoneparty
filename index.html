@@ -478,7 +478,7 @@
           </div>
           <div class="modal-content">
             <div class="gallery-wrap type02">
-              <div class="component-swiper gallery-swiper02" data-component="swiper" data-props-initial-slide="1" data-props-navigation="false" data-props-pagination="true" data-props-autoplay="false" data-props-slides-per-view="1" data-props-speed="700" data-props-space-between="8">
+              <div class="component-swiper gallery-swiper02" data-component="swiper" data-props-initial-slide="1" data-props-navigation="false" data-props-pagination="true" data-props-autoplay="false" data-props-slides-per-view="1" data-props-speed="700" data-props-space-between="8" data-props-loop="false">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="img-box">
@@ -635,7 +635,8 @@
           // 모달이 열릴 때 클릭한 이미지의 인덱스로 swiper02 초기화
           // 모달이 열릴 때 클릭한 이미지의 인덱스로 swiper02 초기화
           if (swiper02) {
-            swiper02.slideTo(Math.floor(index / 3) * 3);
+            // console.log(Math.floor(index / 3) * 3);
+            swiper02.slideTo(index);
           }
           setTimeout(() => {
             document.querySelector('.modal03').ui.open();
@@ -648,7 +649,8 @@
         // 모달이 닫힐 때 swiper01의 인덱스를 swiper02와 동기화
         if (swiper01 && swiper02) {
           const currentIndex = swiper02.activeIndex;
-          swiper01.slideTo(Math.floor(currentIndex / 3) * 3);
+          // console.log(Math.floor(currentIndex / 3) * 3);
+          swiper01.slideTo(currentIndex);
         }
       });
       // 입력시 버튼 활성화
@@ -1139,6 +1141,39 @@
     }
 
   </script>
+  <!-- <script>
+      // 전역 에러 핸들러 추가
+      window.onerror = function (msg, url, line, col, error) {
+        console.error('Global error:', {
+          msg,
+          url,
+          line,
+          col,
+          error
+        });
+        return false;
+      };
+    </script> -->
+  <!-- 여기서부터 지도 관련 스크립트만 body 끝으로 이동 -->
+  <!-- <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script charset="UTF-8">
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          new daum.roughmap.Lander({
+            "timestamp": "1739380252194",
+            "key": "2n234",
+            "level": "3", // 확대 레벨 (1: 가장 확대, 14: 가장 축소)
+            "mapWidth": "100%",
+            "position": {
+              "lat": 37.4933, // 위도
+              "lng": 126.9179, // 경도
+              "zoom": true // 자동 중심점 조정
+            },
+            "sizeMode": "fill" // 지도 크기 모드
+          }).render();
+        }, 3500); // 약간의 지연을 주어 DOM이 완전히 준비되도록 함
+      });
+    </script> -->
 </body>
 
 </html>
