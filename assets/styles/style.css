@@ -5477,6 +5477,12 @@ body {
   color: rgb(57, 62, 70);
   line-height: 1.3;
 }
+@media (min-width:786px) {
+  #content > *{
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
 
 img {
   width: 100%;
